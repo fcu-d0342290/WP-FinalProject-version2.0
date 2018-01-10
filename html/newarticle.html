@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>偏鄉大躍進</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+
+    <style>
+        img {
+            height: auto;
+            max-width: 100%;
+            margin: auto;
+            max-height: 200px;
+        }
+
+        .articleImg {
+            height: 300px;
+            max-width: 420px;
+            margin: auto;
+            max-height: 300px;
+        }
+    </style>
+    <script src="../js/jquery-1.10.2.min.js"></script>
+    <script src="../js/jquery.transit.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/homePageArticle.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <header id="mdn-header" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mdn-toggle-nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="homePage.html">
+                &nbsp;&nbsp;
+                <img src="../img/title.png">
+            </a>
+
+        </div>
+
+        <nav id="mdn-toggle-nav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <form>
+                        <br>
+                        <input type="input" class="form-control" id="searchTarget">
+
+                </li>
+                <li>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-circle-arrow-up"></span>PAGETOP</a>
+                </li>
+                <li>
+                    <a href="javascript:myFunction();">
+                        <span class="glyphicon glyphicon-list-alt"></span>上傳文章</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="uploadArticle.html">文章</a>
+                        <a href="needHelpForm.html">需求單</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="aboutUs.html">
+                        <span class="glyphicon glyphicon-info-sign"></span>關於我們</a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <span class="glyphicon glyphicon-asterisk"></span>登入帳號</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="newInformation col-" align="center">
+        <font face="微軟正黑體" style="font-size: 4.8vmin;color:rgb(2, 2, 2)">最新文章</font>
+        <br>
+        <br>
+        <nav>
+            <ul>
+                <li class="page01">
+                    <a class="selected a1" href="#page01">01</a>
+                </li>
+                <li class="page02">
+                    <a class="a1" href="#page02">02</a>
+                </li>
+                <li class="page03">
+                    <a class="a1" href="#page03">03</a>
+                </li>
+            </ul>
+            <nav>
+    </div>
+
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3 col-md-1">
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-9">
+                <section id="page01" class="content">
+                    <section class="main-img">
+                        <div class="triangle"></div>
+                        <div class="photo">
+                            <img class="articleImg" src="../img/1.jpg">
+                        </div>
+                        <div class="ttl">
+                            <div class="circle"></div>
+                            <div class="page-id">01</div>
+                        </div>
+                    </section>
+                    <section class="copy">
+                        <font face="微軟正黑體" style="font-size: 4.8vmin;color:rgb(25, 211, 152)">偏鄉駐點計畫 & 行動車前進偏鄉計畫</font>
+                        <p class="JQellipsis">
+                            <br>　　小校的教師原配額就少，加上交通的不便，使得老師到市區參加培訓的便利性較低，往往需要更多資源的進入，幫助這些有需要的小校辦理師資培訓。 永齡・鴻海台灣希望小學行動車前進偏鄉服務計畫，今年已經在中彰投地區開辦，這是我們的第一個階段，未來落點服務將深入全台偏遠地區的小校及社區。
+                        </p>
+                        <a class="btnClick" href="article.html">更多</a>
+                    </section>
+                </section>
+                <section id="page02" class="content">
+                    <section class="main-img">
+                        <div class="triangle"></div>
+                        <div class="photo">
+                            <img class="articleImg" src="../img/2.jpg">
+                        </div>
+                        <div class="ttl">
+                            <div class="circle"></div>
+                            <div class="page-id">02</div>
+                        </div>
+                    </section>
+                    <section class="copy">
+                        <font face="微軟正黑體" style="font-size: 3.8vmin;color:rgb(25, 211, 152)">南投爽文國中教師王政忠 夢的N次方啟動2萬老師</font>
+                        <br>
+                        <br>　　長期待在偏鄉的王政忠，看見資源不足的學生學習上的困難，獨創了MAPS教學法，一切都是為了讓學生學會學習，而這種對大多數學生有用的方法，他很樂意跟更多老師分享。 台灣這幾年熱血教師自主性的教學研習會，發展得風風火火，想示範自己教學法的老師開班分享，想來觀摩的自由報名。網路的、實體的都有，各種系統各自發展，其中最具規模的，是南投爽文國中國文老師王政忠開創的「夢的N次方」系列，已有近2萬老師參與研習。
+
+                        </p>
+                        <a class="btnClick" href="article2.html">更多</a>
+                    </section>
+                </section>
+                <section id="page03" class="content">
+                    <section class="main-img">
+                        <div class="triangle"></div>
+                        <div class="photo">
+                            <img class="articleImg" src="../img/3.jpg">
+                        </div>
+                        <div class="ttl">
+                            <div class="circle"></div>
+                            <div class="page-id">03</div>
+                        </div>
+                    </section>
+                    <section class="copy">
+                        <font face="微軟正黑體" style="font-size: 4.8vmin;color:rgb(25, 211, 152)">施惠文：傾聽孩子，他們會為你而改變</font>
+                        <br>
+                        <br>
+                        <p class="JQellipsis">
+                            成立於2013年底的「為台灣而教」（Teach For Taiwan, TFT），三年來已培育近60名偏鄉教師、服務超過1700名學童，為台灣的偏鄉教育掀起溫柔革命。 其中，擔任TFT教學發展部總監的施惠文，主要負責偏鄉師資的招募、篩選、培訓及支持等工作，是培訓偏鄉老師的關鍵人物之一。台大人類學系、社會所畢業的她，長期關注教育及社會不平等議題。
+                            她回憶，數年前在花蓮投入偏鄉服務時，好奇問小朋友的夢想是什麼，孩子們天真地說：「想當加油站員工！」「想跟爸爸白天一起做板模工，晚上再兼差賺錢，」施惠文感到有些詫異，她沒想過這些勞力密集、相對危險的工作，會是「夢想」。
+                            「碩士時，念過很多社會不平等、階級弱勢的文獻，沒想到真實發生在眼前，」施惠文感到心疼，偏鄉孩子大多來自經濟拮据的家庭，孩子們的夢想，便是分擔父母肩頭的生計重擔。她認為，對藍領家庭的子女而言，接受良好教育，或許比從事勞力密集工作，更有機會翻轉困境。
+
+                        </p>
+                        <a class="btnClick" href="test.html">更多</a>
+                    </section>
+                </section>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

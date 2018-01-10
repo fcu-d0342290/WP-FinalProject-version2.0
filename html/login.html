@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>偏鄉大躍進</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/signin.css">
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <header id="mdn-header" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mdn-toggle-nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="homePage.html">
+                &nbsp;&nbsp;
+                <img src="../img/title.png">
+            </a>
+
+        </div>
+
+        <nav id="mdn-toggle-nav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <form>
+                        <span class="glyphicon"></span>
+                        <input type="input" class="form-control" id="searchTarget">
+
+                </li>
+                <li>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-circle-arrow-up"></span>PAGETOP</a>
+                </li>
+                <li>
+                    <a href="javascript:myFunction();">
+                        <span class="glyphicon glyphicon-list-alt"></span>上傳文章</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="uploadArticle.html">文章</a>
+                        <a href="needHelpForm.html">需求單</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="aboutUs.html">
+                        <span class="glyphicon glyphicon-info-sign"></span>關於我們</a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <span class="glyphicon glyphicon-asterisk"></span>登入帳號</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+
+        <form class="form-signin">
+
+            <h2 class="form-signin-heading">
+                <font face="微軟正黑體">請登入</font>
+            </h2>
+            <label for="inputEmail" class="sr-only">
+                <font face="微軟正黑體">Email address</font>
+            </label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox" value="remember-me">
+                    <font face="微軟正黑體">記住密碼</font>
+                </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">登入</button>
+            <br>
+            <a href="register.html">
+                <font face="微軟正黑體">註冊帳號</font>
+            </a>
+        </form>
+
+    </div>
+    <!-- /container -->
+
+
+</body>
+
+</html>

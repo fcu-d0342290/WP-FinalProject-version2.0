@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>偏鄉大躍進</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
+
+    <script src="../js/jquery-3.2.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/inputFile.js"></script>
+    <script src="../js/dropdown.js"></script>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <header id="mdn-header" class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mdn-toggle-nav">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a href="homePage.html">
+                &nbsp;&nbsp;
+                <img src="../img/title.png">
+            </a>
+
+        </div>
+
+        <nav id="mdn-toggle-nav" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li>
+                    <form>
+                        <br>
+                        <input type="input" class="form-control" id="searchTarget">
+
+                </li>
+                <li>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Search</button>
+                    </form>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-circle-arrow-up"></span>PAGETOP</a>
+                </li>
+                <li>
+                    <a href="javascript:myFunction();">
+                        <span class="glyphicon glyphicon-list-alt"></span>上傳文章</a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="uploadArticle.html">文章</a>
+                        <a href="needHelpForm.html">需求單</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="aboutUs.html">
+                        <span class="glyphicon glyphicon-info-sign"></span>關於我們</a>
+                </li>
+                <li>
+                    <a href="login.html">
+                        <span class="glyphicon glyphicon-asterisk"></span>登入帳號</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-8">
+                <form>
+                    <input type='file' class="upl">
+                    <div>
+                        <img class="preview" style="max-width: 150px; max-height: 150px;" src="../img/noimage.gif">
+                        <div class="size"></div>
+                    </div>
+                </form>
+                <form action="UploadArticle.html" align="right">
+                    <textarea name="post-text" cols="94" rows="20" tabindex="20" data-min-length="" style="width:100%;border:3px rgb(101, 174, 241) solid;"></textarea>
+                    <button type="submit" class="btn btn-primary">上傳</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
