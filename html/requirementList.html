@@ -6,27 +6,25 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="../css/slick.css">
-	<link rel="stylesheet" type="text/css" href="../css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../css/dropdown.css">
 
 	<style>
-		.slideContainer img {
-			max-height: 400px;
-			width: 87%;
-			margin: auto;
-
-		}
-
-		p {
+		.requirementFont {
 			font-family: 微軟正黑體;
 			font-size: 1.2em;
+		}
+
+		.requirementImg {
+			height: auto;
+			width: 100%;
+			max-width: 100%;
+			margin: auto;
+			max-height: 200px;
 		}
 	</style>
 
 	<script src="../js/jquery-3.2.1.min.js"></script>
-	<script src="../js/slick.js"></script>
 	<script src="../js/homePageArticle.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/jquery.min.js"></script>
@@ -93,48 +91,50 @@
 	<br>
 	<br>
 	<br>
-	<section class="slideContainer slider">
-		<div>
-			<a href="article.html">
-				<img src="../img/1.jpg">
-			</a>
+	<div class="container">
+		<div class="col-xs-12  col-sm-12 col-md-12" align="center">
+			<font face="微軟正黑體" style="font-size: 6.8vmin;color:rgb(2, 2, 2)">需求牆</font>
+			<br>
+			<br>
 		</div>
-		<div>
-			<a href="article2.html">
-				<img src="../img/2.jpg">
-			</a>
+		<div class="col-xs-12  col-sm-4 col-md-4">
+			<div style="background-color:#ccffff;">
+				<img class="requirementImg" src="../img/requirement1.jpg">
+				<p>
+					<font class="requirementFont">
+						地區 : 南投縣仁愛鄉中正路
+						<br>需求 : 公益旅館
+					</font>
+				</p>
+
+			</div>
 		</div>
-		<div>
-			<a href="article3.html">
-				<img src="../img/3.jpg">
-			</a>
+		<div class="col-xs-12  col-sm-4 col-md-4">
+			<div style="background-color:#ccffff;">
+				<img class="requirementImg" src="../img/requirement2.jpg">
+				<p>
+						<font class="requirementFont">
+							地區 : 南投縣仁愛鄉中正路
+							<br>需求 : 蔬菜 大量
+						</font>
+					</p>
+
+			</div>
 		</div>
-	</section>
+		<div class="col-xs-12  col-sm-4 col-md-4">
+			<div style="background-color:#ccffff;">
+					<img class="requirementImg" src="../img/requirement2.png">
+				<p>
+						<font class="requirementFont">
+							地區 : 南投縣仁愛鄉中正路
+							<br>需求 : 公益旅館
+						</font>
+					</p>
 
-	<script src="../js/slick.js" type="text/javascript" charset="utf-8"></script>
-	<script type="text/javascript">
-		$(document).on('ready', function () {
-			$(".slideContainer").slick({
-				dots: true,         /* 下面圖片數(黑點) */
-				lazyLoad: 'ondemand', // ondemand progressive anticipated
-				infinite: true,
-				autoplay: true,      /* 自動播放 */
-				autoplaySpeed: 2500  /* 輪播速度 */
-			});
-		});
-	</script>
+			</div>
+		</div>
+	</div>
 
-
-	<img src="../img/help.jpg"><a class="btn btn-success" href="#" role="button">需要幫助</a>
-
-
-
-	<footer align="center" style="background-color:rgb(41, 40, 40);">
-		<p style="color:white;">Copyright© 老闆做事啦 .</p>
-		<p style="color:white;">聯絡資訊 :
-			<a href="mailto:l85e1o11@gmail.com">
-				l85e1o11@gmail.com</a>.</p>
-	</footer>
 </body>
 
 </html>
