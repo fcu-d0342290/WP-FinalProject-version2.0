@@ -8,7 +8,6 @@
     <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/dropdown.css">
-    <link rel="stylesheet" type="text/css" href="../css/form.css" />
     <link rel="stylesheet" type="text/css" href="../css/signin.css" />
     
 
@@ -90,90 +89,46 @@
     </header>
     <br>
     <br>
-    <br>
-    <br>
-    <br>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12">
-                <form id="form" method="POST" action="hogehoge">
-                    <br>
-                    <h1 id="form__title">需求清單</h1>
-                    <div class="form__section">
-                        <h2 class="form__header">姓名</h2>
-                        <div class="form__input">
-                            <input class="form-control" type="text" name="name" />
-                            <!-- /.form__input -->
-                        </div>
-                        <!-- /.form__section -->
-                    </div>
-                    <div class="form__section">
-                        <h2 class="form__header">電話號碼</h2>
-                        <div class="form__input">
-                            <input class="form-control" type="tel" name="tel" placeholder="XX-XXXX-XXXX" />
-                            <!-- /.form__input -->
-                        </div>
-                        <!-- /.form__section -->
-                    </div>
-                    <div class="form__section">
-                        <h2 class="form__header">email</h2>
-                        <div class="form__input">
-                            <input class="form-control" type="email" name="email" placeholder="hoge@example.com" />
-                            <!-- /.form__input -->
-                        </div>
-                        <!-- /.form__section -->
-                    </div>
-                    <div class="form__section">
-                        <h2 class="form__header">地點</h2>
-                        <div class="form__input">
-                            <input class="form-control" type="text" name="area" placeholder="XX縣XX市XX鄉XX路XX號">
-                            <!-- /.form__input -->
-                        </div>
-                        <!-- /.form__section -->
-                    </div>
-                    <div class="form__section">
-                        <h2 class="form__header">物品</h2>
-                        <div class="form__input">
-                            <input class="form-control" type="text" name="things">
-                            <!-- /.form__input -->
-                        </div>
-                        <!-- /.form__section -->
-                    </div>
-                    <div class="form__section">
-                        <h2 class="form__header">需求數量</h2>
-                        <div class="form__input">
-                            <input class="form-control" type="text" name="count" />
-                            <!-- /.form__input -->
-                        </div>
-                        <!-- /.form__section -->
-                    </div>>
-                    <div class="form__section">
-                        <h2 class="form__header">照片</h2>
-                        <input type='file' class="upl">
-                        <div>
-                            <img class="preview" style="max-width: 150px; max-height: 150px;" src="../img/noimage.gif">
-                            <div class="size"></div>
-                        </div>
-                    </div>
-                    <div class="form__section">
-                        <div class="form__input" align="right">
-                            <button class="btn btn-lg btn-primary btn-block" style="max-width:50px;" type="submit" onClick="return check()">送出</button>
-                            <!-- /.form__input -->
-                        </div>
-                        <!-- /.form__section -->
-                    </div>
-                    <!-- /#form -->
-                </form>
-                <!-- /#wrapper -->
-                </section>
-            </div>
-        </div>
 
-    </div>
-
-
-
-    <script src="../js/form.js"></script>
+		<form class="form-signin">
+			<font face="微軟正黑體">
+				<h2 class="form-signin-heading">
+					<font face="微軟正黑體">需求單</font>
+				</h2>
+				<font face="微軟正黑體">姓名</font>
+				<input type="text" id="inputName" class="form-control">
+				<font face="微軟正黑體">信箱</font>
+				<input type="text" id="inputEmail" class="form-control">
+				<font face="微軟正黑體">電話</font>
+                <input type="text" id="inputPhone" class="form-control">
+                <font face="微軟正黑體">地點</font>
+                <input type="text" id="inputAddress" class="form-control">
+                <font face="微軟正黑體">分類</font>
+                <div class="form-group">
+                    <select class="form-control" id="inputCategory" value="請選擇種類">
+                      <option>物資</option>
+                      <option>金援</option>
+                      <option>教育</option>
+                      <option>其他</option>
+                    </select>
+                  </div>
+				<font face="微軟正黑體">物品說明</font>
+                <input type="text" id="inputRequirement" class="form-control">
+                <font face="微軟正黑體">數量</font>
+                <input type="text" id="inputCount" class="form-control">
+                <font face="微軟正黑體">照片</font>
+                <input type='file' class="upl">
+                    <div>
+                        <img class="preview" style="max-width: 150px; max-height: 150px;" src="../img/noimage.gif">
+                        <div class="size"></div>
+                    </div>
+                
+				<br>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">註冊</button>
+			</font>
+		</form>
+	</div>
 </body>
 
 </html>

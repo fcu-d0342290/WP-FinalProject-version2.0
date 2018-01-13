@@ -1,0 +1,17 @@
+.requirementFont {
+	font-family: 微軟正黑體;
+	font-size: 1.2em;
+}
+.requirementImg {
+	height: auto;
+	width: 100%;
+	max-width: 100%;
+	margin: auto;
+	max-height: 200px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+}
+.requirementDiv{
+	background-color:#def8de;
+	border-radius:10px;
+}
