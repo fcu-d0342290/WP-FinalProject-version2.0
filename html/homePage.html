@@ -23,6 +23,15 @@
 			font-family: 微軟正黑體;
 			font-size: 1.2em;
 		}
+
+		.rwdImg {
+			height: auto;
+			width: 100%;
+			max-width: 100%;
+			margin: auto;
+			max-height: 250px;
+			border-radius: 10px;
+		}
 	</style>
 
 	<script src="../js/jquery-3.2.1.min.js"></script>
@@ -123,18 +132,38 @@
 			});
 		});
 	</script>
-
-
-	<img src="../img/help.jpg"><a class="btn btn-success" href="#" role="button">需要幫助</a>
-
-
-
-	<footer align="center" style="background-color:rgb(41, 40, 40);">
-		<p style="color:white;">Copyright© 老闆做事啦 .</p>
-		<p style="color:white;">聯絡資訊 :
-			<a href="mailto:l85e1o11@gmail.com">
-				l85e1o11@gmail.com</a>.</p>
-	</footer>
+	<div class="container">
+		<div align="center">
+				<br>
+			<img src="../img/article.png">
+			<br>
+			<br>
+		</div>
+		<div class="col-xs-12  col-sm-6 col-md-6" align="center">
+			<img src="../img/upload.jpg" class="rwdImg">
+			<a class="btn btn-success" href="uploadArticle.html" role="button">上傳文章</a>
+		</div>
+		<div class="col-xs-12  col-sm-6 col-md-6" align="center">
+			<img src="../img/type-article.jpg" class="rwdImg">
+			<a class="btn btn-success" href="newArticle.html" role="button">最新文章</a>
+		</div>
+		<div  align="center">
+			<br>
+			<br>
+			<img src="../img/love.png">
+			<br>
+			<br>
+		</div>
+		<div class="col-xs-12  col-sm-6 col-md-6" align="center">
+			<img src="../img/help.jpg" class="rwdImg">
+			<a class="btn btn-success" href="needHelpForm.html" role="button">需要幫助</a>
+		</div>
+		<div class="col-xs-12  col-sm-6 col-md-6" align="center">
+			<img src="../img/give.jpg" class="rwdImg">
+			<a class="btn btn-success" href="requirementList.html" role="button">給予幫助</a>
+		</div>
+	</div>
+	<br><br>　
 </body>
 
 </html>
