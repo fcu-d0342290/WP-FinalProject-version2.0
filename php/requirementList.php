@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="zh-tw">
 
@@ -39,7 +28,7 @@
 				<span class="icon-bar"></span>
 			</button>
 
-			<a href="homePage.html">
+			<a href="../html/homePage.html">
 				&nbsp;&nbsp;
 				<img src="../img/title.png">
 			</a>
@@ -68,16 +57,16 @@
 					<a href="javascript:myFunction();">
 						<span class="glyphicon glyphicon-list-alt"></span>上傳文章</a>
 					<div id="myDropdown" class="dropdown-content">
-						<a href="uploadArticle.html">文章</a>
-						<a href="needHelpForm.html">需求單</a>
+						<a href="../html/uploadArticle.html">文章</a>
+						<a href="../html/needHelpForm.html">需求單</a>
 					</div>
 				</li>
 				<li>
-					<a href="aboutUs.html">
+					<a href="../html/aboutUs.html">
 						<span class="glyphicon glyphicon-info-sign"></span>關於我們</a>
 				</li>
 				<li>
-					<a href="login.html">
+					<a href="../html/login.html">
 						<span class="glyphicon glyphicon-asterisk"></span>登入帳號</a>
 				</li>
 
