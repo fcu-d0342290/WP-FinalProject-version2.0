@@ -19,7 +19,7 @@ include("mysql_connect.php");
 		if($Name != null && $Email != null && $Phone != null && $Address != null && $Category != null && $Resource != null && $Quantity != null)
 		{
 
-			$sql = "insert into requirementlist (name,email,phone,address,category,resource,quantity) values('$Name','$Email','$Phone','$Address','$Category','$Resource','$Quantity')";
+			$sql = "insert into requirementlist (name,email,phone,address,category,resource,quantity,image) values('$Name','$Email','$Phone','$Address','$Category','$Resource','$Quantity','$name')";
 			$result = mysqli_query($con,$sql) or die('上傳失敗');
             //將帳號寫入session，方便驗證使用者身份
 
@@ -33,5 +33,9 @@ include("mysql_connect.php");
 		}
 		
 		
+	}else
+	{
+		echo "註冊失敗";
+		echo '<meta http-equiv=REFRESH CONTENT=1;url=../html/needHelpForm.html>';
 	}
 ?>
