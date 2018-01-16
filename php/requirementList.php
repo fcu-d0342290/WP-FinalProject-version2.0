@@ -98,7 +98,7 @@
                     {   
                         
                         if($count < 3) {
-                            echo "<div class='col-xs-12  col-sm-4 col-md-4'>";
+                            echo "<div class='col-xs-12  col-sm-6 col-md-4'>";
                             echo "  <div class='requirementDiv'>";
                             echo "      <img class='requirementImg' src='../img/$row[7]'>";
                             echo "      <font class='requirementFont'>&nbsp;&nbsp;地區：$row[3]<br>&nbsp;&nbsp;需求：$row[5] $row[6]</font>";

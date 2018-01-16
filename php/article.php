@@ -83,8 +83,15 @@
                         <span class="glyphicon glyphicon-info-sign"></span>關於我們</a>
                 </li>
                 <li>
-                    <a href="../html/login.html">
-                        <span class="glyphicon glyphicon-asterisk"></span>登入帳號</a>
+                    <?php
+                        if (isset($_SESSION['Account'])){
+                            echo "<a href='../php/logout.php'>";
+                            echo "<span class='glyphicon glyphicon-asterisk'></span>帳號登出</a>";  
+                        }else{
+                            echo "<a href='../html/login.html'>";
+                            echo "<span class='glyphicon glyphicon-asterisk'></span>登入帳號</a>";
+                        }
+                    ?>
                 </li>
             </ul>
         </nav>
