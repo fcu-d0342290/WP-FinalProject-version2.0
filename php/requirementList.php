@@ -115,7 +115,7 @@
                 ?>
 
         <div align="right">
-        <a class="btn btn-link" href="#" role="button">
+        <a class="btn btn-link" href="../php/resource.php" role="button">
             <font face="微軟正黑體" style="font-size: 3.6vmin;">更多物資幫助...</font></a>
     </div>
 		

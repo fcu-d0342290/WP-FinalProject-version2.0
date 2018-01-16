@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -182,15 +183,22 @@
 
         if(isset($_POST['inputMessage'])) {
             $Message = $_POST["inputMessage"];
-            if($Message != null)
+            if(isset($_SESSION['Account'])){
+                $UserName = $_SESSION['Account'];
+                if($Message != null && $UserName != null)
+                {   
+                    $sql = "insert into messageboard (articleName,userName,content) values('article1','$UserName','$Message')";
+                    $result = mysqli_query($con,$sql);
+                    //echo '<meta http-equiv=REFRESH CONTENT=1;url=../html/homePage.html>';
+                }
+            }else
             {
-                $sql = "insert into messageboard (articleName,userName,content) values('article1','TestName','$Message')";
-                $result = mysqli_query($con,$sql);
-                //echo '<meta http-equiv=REFRESH CONTENT=1;url=../html/homePage.html>';
-            }
-            else
-            {
-                
+                echo "<div class='col-sm-3 col-md-3'>
+                    </div>  
+                    <div class='col-sm-6 col-md-6'>
+                        <form class='form-signin' name='form1' method='post' action='' >
+                            請先<a href='../html/login.html'>登入</a>
+                    </div>";
             }
         }
     ?>

@@ -1,4 +1,4 @@
-<!--<?php //session_start(); ?>-->
+<?php session_start(); ?>
 <!--上方語法為啟用session，此語法要放在網頁最前方-->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <?php
@@ -17,8 +17,11 @@ $row = @mysqli_fetch_array($result);
 //以及MySQL資料庫裡是否有這個會員
 if($Email != null && $Password != null && $Password == $row['password'])     
 {
+        $sql2 = "select name from member where email ='$Email'";
+        $result2 = mysqli_query($con,$sql2);
+        $row2 = @mysqli_fetch_array($result2);
         //將帳號寫入session，方便驗證使用者身份
-        //$_SESSION['Account'] = $Account;
+        $_SESSION['Account'] = $row2[0];
         echo '登入成功!';
         echo '<meta http-equiv=REFRESH CONTENT=1;url=../html/homePage.html>';
 }
